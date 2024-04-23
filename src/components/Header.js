@@ -6,7 +6,7 @@ const Header = () => {
             <header>
                 <h1>SimplonPital</h1>
                <form>
-                   <input type="text" placeholder="Rechercher un patient" />
+                   <input id={"rechercher"} type="text" placeholder="Rechercher un patient" />
                </form>
             </header>
 

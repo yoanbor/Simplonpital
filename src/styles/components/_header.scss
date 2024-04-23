@@ -1,0 +1,24 @@
+@media (max-width: 500px) {
+  .header {
+    margin: 47px 0;
+
+    header{
+      display: flex;
+      margin: 86px 15px 60px 9PX;
+
+      h1{
+        color: $hightest;
+        margin-right: 15px;
+      }
+      #rechercher {
+        border-color: white;
+        width: 173px;
+        height: 40px;
+        border-radius: 8px;
+        background: white;
+      }
+
+    }
+
+  }
+}
