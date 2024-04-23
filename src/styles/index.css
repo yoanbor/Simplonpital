@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "font-1";
+  src: url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #EFF6FF;
+  font-family: "font-1", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media (max-width: 500px) {
+  .header {
+    margin: 47px 0;
+  }
+  .header header {
+    display: flex;
+    margin: 86px 15px 60px 9PX;
+  }
+  .header header h1 {
+    color: #172554;
+    height: 36px;
+    width: 181px;
+    margin-right: 50px;
+  }
+  .header header #rechercher {
+    border-color: white;
+    width: 173px;
+    height: 40px;
+    border-radius: 8px;
+    background: white;
+  }
+}
+@media (max-width: 500px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  .main-container main h2 {
+    color: #172554;
+    height: 32px;
+    width: 96px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["_settings.scss","components/_header.scss","components/_main.scss"],"names":[],"mappings":"AAAA;EACE;EACA;;AAmBF;EACE;EACA;EACA;;;AAGF;EACE,YArBO;EAsBP,aAxBO;;;AA2BT;EACE;;;ACjCF;EACE;IACE;;EAEA;IACE;IACA;;EAEA;IACE,ODIG;ICHH;IACA;IACA;;EAEF;IACE;IACA;IACA;IACA;IACA;;;ACnBR;EACE;IACE;IACA;IACA;;EAIE;IACE,OFIG;IEHH;IACA","file":"index.css"}
