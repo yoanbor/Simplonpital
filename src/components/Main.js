@@ -1,12 +1,13 @@
 import React from 'react';
-import Cards from "./Cards";
+import Patients from "./Patients";
+
 
 const Main = () => {
     return (
         <div className="main-container">
             <main>
                 <h2>Patients</h2>
-                <Cards />
+                <Patients />
             </main>
         </div>
     );
