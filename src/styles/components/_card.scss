@@ -1,0 +1,36 @@
+  .card {
+    background-color: $low;
+    margin: 10px 15px 10px 0 ;
+    padding: 15px 0 15px 21px;
+    border-radius: 25px;
+    p {
+      margin: 5px 0;
+    }
+    .card-patient {
+
+      .card-nom-prenom {
+        display: flex;
+        margin-bottom: 5px;
+
+        h3 {
+          margin-right: 5px;
+        }
+
+      }
+
+    }
+
+      .card-service-chambre {
+        display: flex;
+
+        .card-service  {
+          margin-right: 143px;
+
+        }
+
+        .card-chambre {
+
+        }
+      }
+
+    }

@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+h2, p, h1, h3 {
+  color: #172554;
+}
+
 body {
   background: #EFF6FF;
   font-family: "font-1", sans-serif;
@@ -81,10 +85,32 @@ header #rechercher {
     margin-left: 15px;
   }
   .main-container main h2 {
-    color: #172554;
+    margin: 25px 0;
     height: 32px;
     width: 96px;
   }
+}
+.card {
+  background-color: #93C5FD;
+  margin: 10px 15px 10px 0;
+  padding: 15px 0 15px 21px;
+  border-radius: 25px;
+}
+.card p {
+  margin: 5px 0;
+}
+.card .card-patient .card-nom-prenom {
+  display: flex;
+  margin-bottom: 5px;
+}
+.card .card-patient .card-nom-prenom h3 {
+  margin-right: 5px;
+}
+.card .card-service-chambre {
+  display: flex;
+}
+.card .card-service-chambre .card-service {
+  margin-right: 143px;
 }
 
 /*# sourceMappingURL=index.css.map */

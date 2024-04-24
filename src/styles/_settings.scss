@@ -25,6 +25,11 @@ $hightest: #172554;
   box-sizing: border-box;
 }
 
+h2, p, h1, h3 {
+  color: $hightest;
+}
+
+
 body {
   background: $lowest;
   font-family: $font-1;
