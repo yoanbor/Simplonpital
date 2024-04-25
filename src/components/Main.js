@@ -7,7 +7,7 @@ const Main = () => {
         <div className="main-container">
             <main>
                 <h2>Patients</h2>
-                <Patients />
+                <Patients/>
             </main>
         </div>
     );

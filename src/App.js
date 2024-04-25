@@ -1,12 +1,14 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Home from "./pages/Home";
+import PageHome from "./pages/PageHome";
+import PageAjouterUnPatient from "./pages/PageAjouterUnPatient";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
           <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="*" element={<PageHome />} />
+              <Route path="/ajouterunpatient" element={<PageAjouterUnPatient />} />
           </Routes>
       </BrowserRouter>
     </div>

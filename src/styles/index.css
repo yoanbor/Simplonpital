@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 h2, p, h1, h3 {
   color: #172554;
 }
@@ -26,20 +30,24 @@ header {
   background: #93C5FD;
   display: flex;
   padding: 87px 40px 60px 50px;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+}
+header a {
+  text-decoration: none;
 }
 header h1 {
   color: #172554;
   font-size: 60px;
   margin-right: 250px;
 }
-header #rechercher {
-  border-color: white;
-  width: 600px;
-  height: 60px;
+header #Ajouter-Patient {
+  background: #3B82F6;
   border-radius: 8px;
-  background: white;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #3B82F6;
+  color: #EFF6FF;
 }
 
 @media (max-width: 1400px) {
@@ -49,17 +57,10 @@ header #rechercher {
   header h1 {
     margin-right: 129px;
   }
-  header #rechercher {
-    height: 40px;
-    width: 450px;
-  }
 }
 @media (max-width: 1100px) {
   header h1 {
     font-size: 40px;
-  }
-  header #rechercher {
-    width: 300px;
   }
 }
 @media (max-width: 700px) {
@@ -71,46 +72,116 @@ header #rechercher {
     font-size: 36px;
     margin-right: 15px;
   }
-  header form {
-    width: 50%;
-  }
-  header form #rechercher {
-    width: 200px;
-  }
 }
-@media (max-width: 500px) {
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-  }
-  .main-container main h2 {
-    margin: 25px 0;
-    height: 32px;
-    width: 96px;
-  }
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
 }
-.card {
+.main-container main h2 {
+  margin: 25px 15px 20px 15px;
+  height: 32px;
+}
+
+.patients-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.patients-list input {
+  background: #EFF6FF;
+  border-radius: 8px;
+  height: 25px;
+}
+.patients-list .card {
   background-color: #93C5FD;
   margin: 10px 15px 10px 0;
-  padding: 15px 0 15px 21px;
+  padding: 15px 21px 15px 21px;
   border-radius: 25px;
+  display: grid;
+  grid-template-areas: "patient chambre" "Service button";
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: start;
+  align-items: end;
 }
-.card p {
+.patients-list .card p {
   margin: 5px 0;
 }
-.card .card-patient .card-nom-prenom {
+.patients-list .card .card-patient .card-nom-prenom {
   display: flex;
   margin-bottom: 5px;
 }
-.card .card-patient .card-nom-prenom h3 {
+.patients-list .card .card-patient .card-nom-prenom h3 {
   margin-right: 5px;
 }
-.card .card-service-chambre {
+.patients-list .card .card-service {
+  margin-bottom: 23px;
+}
+.patients-list .card .card-button {
   display: flex;
 }
-.card .card-service-chambre .card-service {
-  margin-right: 143px;
+.patients-list .card input {
+  margin-top: 5px;
+}
+.patients-list .card #service {
+  margin-bottom: 12px;
+}
+.patients-list .card #Modifier {
+  background: #3B82F6;
+  border-radius: 8px;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #3B82F6;
+  color: #EFF6FF;
+}
+.patients-list .card #Valider {
+  background: #3B82F6;
+  border-radius: 8px;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #3B82F6;
+  color: #EFF6FF;
+}
+.patients-list .card #Annuler {
+  background: none;
+  width: 60px;
+  height: 50px;
+  border: none;
+  color: red;
+}
+
+@media (max-width: 1600px) {
+  .patients-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 1600px) and (max-width: 1100px) {
+  .patients-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 1600px) and (max-width: 700px) {
+  .patients-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.form-ajout-patient {
+  display: flex;
+  flex-direction: column;
+}
+.form-ajout-patient input {
+  padding: 10px;
+  margin: 0 auto 20px 15px;
+  background-color: white;
+  height: 48px;
+  width: 353px;
+  border-radius: 8px;
+  border-color: #CBD5E1;
+  color: #09090B;
 }
 
 /*# sourceMappingURL=index.css.map */

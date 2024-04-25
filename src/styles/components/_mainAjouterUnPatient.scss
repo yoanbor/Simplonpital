@@ -1,0 +1,15 @@
+.form-ajout-patient {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    padding: 10px;
+    margin: 0 auto 20px 15px ;
+    background-color: white;
+    height: 48px;
+    width: 353px;
+    border-radius: 8px;
+    border-color: #CBD5E1;
+    color: #09090B;
+  }
+}

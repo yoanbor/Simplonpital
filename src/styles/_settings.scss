@@ -25,6 +25,10 @@ $hightest: #172554;
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 h2, p, h1, h3 {
   color: $hightest;
 }

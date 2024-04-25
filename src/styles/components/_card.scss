@@ -1,36 +1,109 @@
-  .card {
-    background-color: $low;
-    margin: 10px 15px 10px 0 ;
-    padding: 15px 0 15px 21px;
-    border-radius: 25px;
-    p {
-      margin: 5px 0;
+  .patients-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    input {
+      background: $lowest;
+      border-radius: 8px;
+      height: 25px;
     }
-    .card-patient {
 
-      .card-nom-prenom {
-        display: flex;
-        margin-bottom: 5px;
+    .card {
+      background-color: $low;
+      margin: 10px 15px 10px 0 ;
+      padding: 15px 21px 15px 21px;
+      border-radius: 25px;
+      display: grid;
+      grid-template-areas: "patient chambre"
+                           "Service button";
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: start;
+      align-items: end;
 
-        h3 {
-          margin-right: 5px;
+
+      p {
+        margin: 5px 0;
+      }
+
+      .card-patient {
+
+
+        .card-nom-prenom {
+          display: flex;
+          margin-bottom: 5px;
+
+          h3 {
+            margin-right: 5px;
+          }
+
         }
 
       }
 
-    }
+      .card-service {
+        margin-bottom: 23px;
+      }
 
-      .card-service-chambre {
+      .card-button {
         display: flex;
+      }
 
-        .card-service  {
-          margin-right: 143px;
+      input {
+        margin-top: 5px;
+      }
 
-        }
+      #service {
+        margin-bottom: 12px;
+      }
 
-        .card-chambre {
+      #Modifier {
+        background: $medium;
+        border-radius: 8px;
+        width: 200px;
+        height: 50px;
+        border: 2px solid $medium;
+        color: $lowest;
+      }
 
-        }
+      #Valider {
+        background: $medium;
+        border-radius: 8px;
+        width: 200px;
+        height: 50px;
+        border: 2px solid $medium;
+        color: $lowest;
+      }
+
+      #Annuler {
+        background: none;
+        width: 60px;
+        height: 50px;
+        border: none;
+        color: red;
       }
 
     }
+  }
+
+  @media (max-width: 1600px) {
+    .patients-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-left: 15px;
+    }
+
+  @media (max-width: 1100px) {
+    .patients-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-left: 15px;
+    }
+
+  }
+
+  @media (max-width: 700px) {
+    .patients-list {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+  }}
